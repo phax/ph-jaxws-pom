@@ -63,6 +63,7 @@
 
   <properties>
     <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
+    <jaxws.version>2.2.10</jaxws.version>
     <jaxws.version>2.2.9-b14002</jaxws.version>
   </properties>
   
@@ -106,6 +107,11 @@
     <dependency>
       <groupId>org.glassfish.ha</groupId>
       <artifactId>ha-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jvnet.staxex</groupId>
+      <artifactId>stax-ex</artifactId>
+      <version>1.7.7</version><!--$NO-MVN-MAN-VER$-->
     </dependency>
   </dependencies>
   
