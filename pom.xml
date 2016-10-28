@@ -25,7 +25,7 @@
     <version>1.9.1</version>
   </parent>
   <artifactId>ph-jaxws</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>ph-jaxws</name>
   <description>A POM only project that contains all dependencies to easily use JAXWS in your Maven project</description>
@@ -44,7 +44,7 @@
     <connection>scm:git:git@github.com:phax/ph-jaxws.git</connection>
     <developerConnection>scm:git:git@github.com:phax/ph-jaxws.git</developerConnection>
     <url>http://github.com/phax/ph-jaxws</url>
-    <tag>ph-jaxws-1.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <organization>
