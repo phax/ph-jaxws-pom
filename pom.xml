@@ -64,7 +64,6 @@
   <properties>
     <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
     <jaxws.version>2.2.10</jaxws.version>
-    <jaxws.version>2.2.9-b14002</jaxws.version>
   </properties>
   
   <dependencyManagement>
