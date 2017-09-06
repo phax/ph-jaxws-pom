@@ -4,6 +4,8 @@ A POM only project that contains all dependencies for easily using JAXWS from Ma
 Currently it is very tedious to include all artefacts relevant for JAXWS into each and every POM manually.
 Therefore I created this project to provide an easy to use POM for using JAXWS from within Maven.
 
+This project is only needed for JAX-WS 2.2.x. JAX-WS 2.3.x comes with a working POM! 
+
 # News and noteworthy
 
 * v1.0.3 - work in progress
