@@ -62,12 +62,20 @@
   </developers>
 
   <properties>
+    <jaxb.version>2.2.11</jaxb.version>
     <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
     <jaxws.version>2.2.10</jaxws.version>
   </properties>
   
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.glassfish.jaxb</groupId>
+        <artifactId>jaxb-bom</artifactId>
+        <version>${jaxb.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
       <dependency>
         <groupId>com.sun.xml.ws</groupId>
         <artifactId>jaxws-ri-bom</artifactId>
@@ -88,12 +96,12 @@
       <artifactId>policy</artifactId>
     </dependency>    
     <dependency>
-      <groupId>com.sun.xml.bind</groupId>
+      <groupId>org.glassfish.jaxb</groupId>
       <artifactId>jaxb-core</artifactId>
     </dependency>
     <dependency>
-      <groupId>com.sun.xml.bind</groupId>
-      <artifactId>jaxb-impl</artifactId>
+      <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
     </dependency>
     <dependency>
       <groupId>org.glassfish.gmbal</groupId>
