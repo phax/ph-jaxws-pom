@@ -8,7 +8,7 @@ This project is only needed for JAX-WS 2.2.x. JAX-WS 2.3.x comes with a working 
 
 # News and noteworthy
 
-* v1.0.3 - work in progress
+* v1.0.3 - 2017-09-12
   * Explicitly using stax-ex 1.7.8
   * Switching from `com.sun.xml.bind` artefacts to `org.glassfish.jaxb` artefacts
 * v1.0.2 - 2017-07-21
@@ -27,7 +27,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxws</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
   <type>pom</type>
 </dependency>
 ```
