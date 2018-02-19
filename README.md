@@ -36,5 +36,5 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 
 ---
 
-My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodeingStyleguide.md) |
+My personal [Coding Styleguide](https://github.com/phax/meta/blob/master/CodingStyleguide.md) |
 On Twitter: <a href="https://twitter.com/philiphelger">@philiphelger</a>
