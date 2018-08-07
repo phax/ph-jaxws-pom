@@ -1,4 +1,7 @@
 # ph-jaxws
+
+**This project is superseded by ph-commons/ph-wsclient**
+
 A POM only project that contains all dependencies for easily using JAXWS from Maven.
 
 Currently it is very tedious to include all artefacts relevant for JAXWS into each and every POM manually.
