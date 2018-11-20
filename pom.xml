@@ -72,6 +72,48 @@
         <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
         <jaxws.version>2.2.10</jaxws.version>
       </properties>
+      <dependencies>
+        <dependency>
+          <groupId>org.glassfish.jaxb</groupId>
+          <artifactId>txw2</artifactId>
+          <version>${jaxb.version}</version>
+        </dependency>
+        <dependency>
+          <groupId>com.sun.xml.ws</groupId>
+          <artifactId>jaxws-rt</artifactId>
+          <exclusions>
+            <exclusion>
+              <groupId>com.sun.xml.bind</groupId>
+              <artifactId>jaxb-core</artifactId>
+            </exclusion>
+            <exclusion>
+              <groupId>com.sun.xml.bind</groupId>
+              <artifactId>jaxb-impl</artifactId>
+            </exclusion>
+          </exclusions>
+        </dependency>
+        <dependency>
+          <groupId>com.sun.xml.ws</groupId>
+          <artifactId>policy</artifactId>
+        </dependency>    
+        <dependency>
+          <groupId>org.glassfish.gmbal</groupId>
+          <artifactId>gmbal-api-only</artifactId>
+        </dependency>
+        <dependency>
+          <groupId>com.sun.xml.stream.buffer</groupId>
+          <artifactId>streambuffer</artifactId>
+        </dependency>
+        <dependency>
+          <groupId>org.glassfish.ha</groupId>
+          <artifactId>ha-api</artifactId>
+        </dependency>
+        <dependency>
+          <groupId>org.jvnet.staxex</groupId>
+          <artifactId>stax-ex</artifactId>
+          <version>1.8</version><!--$NO-MVN-MAN-VER$-->
+        </dependency>
+      </dependencies>
     </profile>
     <profile>
       <id>jdk9up</id>
@@ -84,6 +126,12 @@
         <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
         <jaxws.version>2.3.1</jaxws.version>
       </properties>
+      <dependencies>
+        <dependency>
+          <groupId>com.sun.xml.ws</groupId>
+          <artifactId>jaxws-rt</artifactId>
+        </dependency>
+      </dependencies>
     </profile>
   </profiles>
   
@@ -105,46 +153,6 @@
       <artifactId>ph-jaxb-pom</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.glassfish.jaxb</groupId>
-      <artifactId>txw2</artifactId>
-      <version>${jaxb.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.ws</groupId>
-      <artifactId>jaxws-rt</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>com.sun.xml.bind</groupId>
-          <artifactId>jaxb-core</artifactId>
-        </exclusion>
-        <exclusion>
-          <groupId>com.sun.xml.bind</groupId>
-          <artifactId>jaxb-impl</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.ws</groupId>
-      <artifactId>policy</artifactId>
-    </dependency>    
-    <dependency>
-      <groupId>org.glassfish.gmbal</groupId>
-      <artifactId>gmbal-api-only</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.sun.xml.stream.buffer</groupId>
-      <artifactId>streambuffer</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.glassfish.ha</groupId>
-      <artifactId>ha-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.jvnet.staxex</groupId>
-      <artifactId>stax-ex</artifactId>
-      <version>1.8</version><!--$NO-MVN-MAN-VER$-->
     </dependency>
   </dependencies>
 </project>
