@@ -1,13 +1,12 @@
 # ph-jaxws
 
-**This project is superseded by ph-commons/ph-wsclient**
-
 A POM only project that contains all dependencies for easily using JAXWS from Maven.
 
 Currently it is very tedious to include all artefacts relevant for JAXWS into each and every POM manually.
 Therefore I created this project to provide an easy to use POM for using JAXWS from within Maven.
 
-This project is only needed for JAX-WS 2.2.x. JAX-WS 2.3.x comes with a working POM but is only targeting Java 9, as JAX-WS 2.3 references JAXB 2.3 which is JDK 9 only. 
+This project is can be used for JAX-WS 2.2.x and 2.3.x (since 1.0.5).
+JAX-WS 2.3.x is only targeting Java 9 and newer. 
 
 # News and noteworthy
 
