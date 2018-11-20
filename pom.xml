@@ -22,7 +22,7 @@
   <parent>
     <groupId>com.helger</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>1.10.3</version>
+    <version>1.10.7</version>
   </parent>
   <artifactId>ph-jaxws</artifactId>
   <version>1.0.5-SNAPSHOT</version>
@@ -61,11 +61,31 @@
     </developer>
   </developers>
 
-  <properties>
-    <jaxb.version>2.2.11</jaxb.version>
-    <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
-    <jaxws.version>2.2.10</jaxws.version>
-  </properties>
+  <profiles>
+    <profile>
+      <id>jdk8</id>
+      <activation>
+        <jdk>1.8</jdk>
+      </activation>
+      <properties>
+        <jaxb.version>2.2.11</jaxb.version>
+        <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
+        <jaxws.version>2.2.10</jaxws.version>
+      </properties>
+    </profile>
+    <profile>
+      <id>jdk9up</id>
+      <activation>
+        <!-- use "12)" to support versions like "11.0.1" -->
+        <jdk>[9,12)</jdk>
+      </activation>
+      <properties>
+        <jaxb.version>2.3.0</jaxb.version>
+        <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
+        <jaxws.version>2.3.1</jaxws.version>
+      </properties>
+    </profile>
+  </profiles>
   
   <dependencyManagement>
     <dependencies>
@@ -137,20 +157,7 @@
     <dependency>
       <groupId>org.jvnet.staxex</groupId>
       <artifactId>stax-ex</artifactId>
-      <version>1.7.8</version><!--$NO-MVN-MAN-VER$-->
+      <version>1.8</version><!--$NO-MVN-MAN-VER$-->
     </dependency>
   </dependencies>
-  
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>

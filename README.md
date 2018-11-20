@@ -11,18 +11,21 @@ This project is only needed for JAX-WS 2.2.x. JAX-WS 2.3.x comes with a working 
 
 # News and noteworthy
 
+* v1.0.5 - work in progress
+    * Explicitly using stax-ex 1.8
+    * Added support for Java versions up to 11
 * v1.0.4 - 2017-09-18
-  * Needed explicit excludes for `com.sun.xml.bind` artefacts
+    * Needed explicit excludes for `com.sun.xml.bind` artefacts
 * v1.0.3 - 2017-09-12
-  * Explicitly using stax-ex 1.7.8
-  * Switching from `com.sun.xml.bind` artefacts to `org.glassfish.jaxb` artefacts
+    * Explicitly using stax-ex 1.7.8
+    * Switching from `com.sun.xml.bind` artefacts to `org.glassfish.jaxb` artefacts
 * v1.0.2 - 2017-07-21
-  * Bound to JAXWS 2.2.10
+    * Bound to JAXWS 2.2.10
 * v1.0.1 - 2016-10-28
-  * Explicitly using stax-ex 1.7.7
+    * Explicitly using stax-ex 1.7.7
 * v1.0.0 - 2016-02-26
-  * Initial release
-  * Bound to JAXWS 2.2.9-b14002
+    * Initial release
+    * Bound to JAXWS 2.2.9-b14002
 
 # Maven usage
 
