@@ -1,4 +1,4 @@
-# ph-jaxws
+# ph-jaxws-pom
 
 A POM only project that contains all dependencies for easily using JAXWS from Maven.
 
@@ -10,9 +10,10 @@ JAX-WS 2.3.x is only targeting Java 9 and newer.
 
 # News and noteworthy
 
-* v1.0.5 - work in progress
+* v1.1.0 - work in progress
     * Explicitly using stax-ex 1.8
     * Added support for Java versions up to 11
+    * Renamed from `ph-jaxws` to `ph-jaxws-pom`
 * v1.0.4 - 2017-09-18
     * Needed explicit excludes for `com.sun.xml.bind` artefacts
 * v1.0.3 - 2017-09-12
