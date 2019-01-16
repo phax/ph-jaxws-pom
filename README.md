@@ -10,6 +10,8 @@ JAX-WS 2.3.x is only targeting Java 9 and newer.
 
 # News and noteworthy
 
+* v1.1.1 - work in progress
+    * Updated to stax-ex 1.8.1
 * v1.1.0 - 2018-11-21
     * Explicitly using stax-ex 1.8
     * Added support for Java versions up to 11
@@ -40,6 +42,27 @@ Include it in your regular Maven dependencies but explicitly state the type **po
   <type>pom</type>
 </dependency>
 ```
+
+
+# Gradle usage
+
+As Gradle does not support Maven profile activation by JDK version, this section outlines the includes per JDK version (as of ph-jaxws-pom 1.1.0).
+
+With JDK 8, include the following dependencies:
+* org.glassfish.jaxb:jaxb-core:2.2.11
+* org.glassfish.jaxb:jaxb-runtime:2.2.11
+* com.sun.istack:istack-commons-runtime:2.21
+* org.glassfish.jaxb:txw2:2.2.11
+* com.sun.xml.ws:jaxws-rt:2.2.10 excluding both com.sun.xml.bind:jaxb-core and com.sun.xml.bind:jaxb-impl
+* com.sun.xml.ws:policy:2.4
+* org.glassfish.gmbal:gmbal-api-only:3.1.0-b001
+* com.sun.xml.stream.buffer:streambuffer:1.5.3
+* org.glassfish.ha:ha-api:3.1.9
+* org.jvnet.staxex:stax-ex:1.8 
+
+With JDK 9 or later, include the following dependencies:
+* org.glassfish.jaxb:jaxb-runtime:2.3.1
+* com.sun.xml.ws:jaxws-rt:2.3.1
 
 ---
 
