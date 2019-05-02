@@ -58,7 +58,7 @@ With JDK 8, include the following dependencies:
 * org.glassfish.gmbal:gmbal-api-only:3.1.0-b001
 * com.sun.xml.stream.buffer:streambuffer:1.5.3
 * org.glassfish.ha:ha-api:3.1.9
-* org.jvnet.staxex:stax-ex:1.8 
+* org.jvnet.staxex:stax-ex:1.8.1
 
 With JDK 9 or later, include the following dependencies:
 * org.glassfish.jaxb:jaxb-runtime:2.3.1
