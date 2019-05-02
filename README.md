@@ -10,6 +10,8 @@ JAX-WS 2.3.x is only targeting Java 9 and newer.
 
 # News and noteworthy
 
+* v1.1.2 - 2019-05-02
+    * Updated to ph-jaxb-pom 1.0.2
 * v1.1.1 - 2019-05-02
     * Updated to stax-ex 1.8.1
     * Added support for JDK 12
@@ -39,7 +41,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxws-pom</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.2</version>
   <type>pom</type>
 </dependency>
 ```
