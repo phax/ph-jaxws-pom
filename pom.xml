@@ -118,11 +118,11 @@
     <profile>
       <id>jdk9up</id>
       <activation>
-        <!-- use "13)" to support versions like "12.0.1" -->
-        <jdk>[9,13)</jdk>
+        <!-- version 9 onwards -->
+        <jdk>[9,)</jdk>
       </activation>
       <properties>
-        <jaxb.version>2.3.1</jaxb.version>
+        <jaxb.version>2.3.2</jaxb.version>
         <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
         <jaxws.version>2.3.1</jaxws.version>
       </properties>
