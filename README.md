@@ -5,11 +5,13 @@ A POM only project that contains all dependencies for easily using JAXWS from Ma
 Currently it is very tedious to include all artefacts relevant for JAXWS into each and every POM manually.
 Therefore I created this project to provide an easy to use POM for using JAXWS from within Maven.
 
-This project is can be used for JAX-WS 2.2.x and 2.3.x (since 1.0.5).
+This project is can be used for JAX-WS 2.2.x and 2.3.x (since 1.1.0).
 JAX-WS 2.3.x is only targeting Java 9 and newer. 
 
 # News and noteworthy
 
+* v1.1.3 - 2019-05-07
+    * Using unbounded version instead of limiting to Java 12.x
 * v1.1.2 - 2019-05-02
     * Updated to ph-jaxb-pom 1.0.2
 * v1.1.1 - 2019-05-02
@@ -41,7 +43,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxws-pom</artifactId>
-  <version>1.1.2</version>
+  <version>1.1.3</version>
   <type>pom</type>
 </dependency>
 ```
@@ -63,7 +65,7 @@ With JDK 8, include the following dependencies:
 * org.jvnet.staxex:stax-ex:1.8.1
 
 With JDK 9 or later, include the following dependencies:
-* org.glassfish.jaxb:jaxb-runtime:2.3.1
+* org.glassfish.jaxb:jaxb-runtime:2.3.2
 * com.sun.xml.ws:jaxws-rt:2.3.1
 
 ---
