@@ -124,7 +124,7 @@
       <properties>
         <jaxb.version>2.3.2</jaxb.version>
         <!-- Must correspond to jaxws-tools.version in jaxws-maven-plugin POM -->
-        <jaxws.version>2.3.1</jaxws.version>
+        <jaxws.version>2.3.2-1</jaxws.version>
       </properties>
       <dependencies>
         <dependency>
