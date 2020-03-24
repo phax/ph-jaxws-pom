@@ -11,7 +11,7 @@ JAX-WS 2.3.x is only targeting Java 9 and newer.
 # News and noteworthy
 
 * v1.1.4 - work in progress
-    * Updated to stax-ex 1.8.2
+    * Updated to stax-ex 1.8.3
     * Updated to jaxws 2.3.2-1
 * v1.1.3 - 2019-05-07
     * Using unbounded version instead of limiting to Java 12.x
