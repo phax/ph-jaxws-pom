@@ -6,13 +6,11 @@ Currently it is very tedious to include all artefacts relevant for JAXWS into ea
 Therefore I created this project to provide an easy to use POM for using JAXWS from within Maven.
 
 This project is can be used for JAX-WS 2.2.x and 2.3.x (since 1.1.0).
-JAX-WS 2.3.x is only targeting Java 9 and newer. 
 
 # News and noteworthy
 
-* v1.1.4 - work in progress
-    * Updated to stax-ex 1.8.3
-    * Updated to jaxws 2.3.2-1
+* v1.2.0 - 2020-09-17
+    * Updated to Jakarta JAX-WS 2.3.3 - no more JDK dependencies
 * v1.1.3 - 2019-05-07
     * Using unbounded version instead of limiting to Java 12.x
 * v1.1.2 - 2019-05-02
@@ -46,12 +44,12 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxws-pom</artifactId>
-  <version>1.1.3</version>
+  <version>1.2.0</version>
   <type>pom</type>
 </dependency>
 ```
 
-# Gradle usage
+# Gradle usage (for issues up to 1.1.3)
 
 As Gradle does not support Maven profile activation by JDK version, this section outlines the includes per JDK version (as of ph-jaxws-pom 1.1.0).
 
