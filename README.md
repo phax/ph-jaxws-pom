@@ -9,8 +9,6 @@ This project is can be used for JAX-WS 3.x (since 1.3.0).
 
 # News and noteworthy
 
-* v1.3.0 - work in progress
-    * Updated to JAX-WS 3.0.0
 * v1.2.0 - 2020-09-17
     * Updated to Jakarta JAX-WS 2.3.3 - no more JDK dependencies
 * v1.1.3 - 2019-05-07

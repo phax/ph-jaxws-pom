@@ -62,7 +62,9 @@
   </developers>
 
   <properties>
-    <jaxws.version>3.0.0</jaxws.version>
+    <!-- 2.3.3: JDK 8 -->
+    <!-- 3.0.0: JDK 11 -->
+    <jaxws.version>2.3.3</jaxws.version>
   </properties>
   
   <dependencyManagement>
