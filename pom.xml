@@ -83,4 +83,17 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+<!-- 
+  <dependencies>
+    <dependency>
+      <groupId>jakarta.xml.ws</groupId>
+      <artifactId>jakarta.xml.ws-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.ws</groupId>
+      <artifactId>jaxws-rt</artifactId>
+    </dependency>
+  </dependencies>
+-->
 </project>
