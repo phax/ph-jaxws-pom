@@ -7,7 +7,7 @@ Therefore I created this project to provide an easy to use POM for using JAXWS f
 
 # News and noteworthy
 
-* v1.3.0 - work in progress
+* v1.3.0 - 2021-05-02
     * Removed `<dependencies>` to enforce using it as a BOM
 * v1.2.0 - 2020-09-17
     * Updated to Jakarta JAX-WS 2.3.3 - no more JDK dependencies
@@ -44,7 +44,7 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxws-pom</artifactId>
-  <version>1.2.0</version>
+  <version>1.3.0</version>
   <type>pom</type>
   <scope>import</scope>
 </dependency>
