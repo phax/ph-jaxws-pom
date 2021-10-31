@@ -7,7 +7,7 @@ Therefore I created this project to provide an easy to use POM for using JAXWS f
 
 # News and noteworthy
 
-* v1.3.1 - 2021-10-31
+* v1.3.2 - 2021-10-31
     * Updated to JAX-WS 2.3.5
 * v1.3.0 - 2021-05-02
     * Removed `<dependencies>` to enforce using it as a BOM

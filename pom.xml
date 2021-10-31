@@ -61,23 +61,20 @@
     </developer>
   </developers>
 
-  <properties>
-    <!-- 2.3.x: JDK 8 -->
-    <!-- 3.0.x: JDK 11 -->
-    <jaxws.version>2.3.5</jaxws.version>
-  </properties>
+  <!-- 2.3.x: JDK 8 -->
+  <!-- 3.0.x: JDK 11 -->
   
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>jakarta.xml.ws</groupId>
         <artifactId>jakarta.xml.ws-api</artifactId>
-        <version>${jaxws.version}</version>
+        <version>2.3.3</version>
       </dependency>
       <dependency>
         <groupId>com.sun.xml.ws</groupId>
         <artifactId>jaxws-ri-bom</artifactId>
-        <version>${jaxws.version}</version>
+        <version>2.3.5</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
