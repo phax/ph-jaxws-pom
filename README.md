@@ -7,6 +7,9 @@ Therefore I created this project to provide an easy to use POM for using JAXWS f
 
 # News and noteworthy
 
+* v2.0.0 - work in progress
+    * Updated to JAX-WS 4.0.0
+    * Requires Java 11 as the baseline
 * v1.3.2 - 2021-10-31
     * Updated to JAX-WS 2.3.5
 * v1.3.0 - 2021-05-02
