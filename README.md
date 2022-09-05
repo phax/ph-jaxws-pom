@@ -1,13 +1,13 @@
 # ph-jaxws-pom
 
-A POM only project that contains all dependencies for easily using JAXWS from Maven.
+A POM only project that contains all dependencies for easily using JAX-WS from Maven.
 
-Currently it is very tedious to include all artefacts relevant for JAXWS into each and every POM manually.
-Therefore I created this project to provide an easy to use POM for using JAXWS from within Maven.
+Currently it is very tedious to include all artefacts relevant for JAX-WS into each and every POM manually.
+Therefore I created this project to provide an easy to use POM for using JAX-WS from within Maven.
 
 # News and noteworthy
 
-* v2.0.0 - work in progress
+* v2.0.0 - 2022-09-05
     * Updated to JAX-WS 4.0.0
     * Requires Java 11 as the baseline
 * v1.3.2 - 2021-10-31
@@ -49,13 +49,13 @@ Include it in your regular Maven dependencies but explicitly state the type **po
 <dependency>
   <groupId>com.helger</groupId>
   <artifactId>ph-jaxws-pom</artifactId>
-  <version>1.3.0</version>
+  <version>2.0.0</version>
   <type>pom</type>
   <scope>import</scope>
 </dependency>
 ```
 
-# Gradle usage (for issues up to 1.1.3)
+# Gradle usage (for issues up to v1.1.3)
 
 As Gradle does not support Maven profile activation by JDK version, this section outlines the includes per JDK version (as of ph-jaxws-pom 1.1.0).
 
