@@ -7,7 +7,7 @@ Therefore I created this project to provide an easy to use POM for using JAX-WS 
 
 # News and noteworthy
 
-* v2.0.1 - work in progress
+* v2.0.1 - 2023-02-24
     * Updated to JAX-WS 4.0.1
 * v2.0.0 - 2022-09-05
     * Updated to JAX-WS 4.0.0
